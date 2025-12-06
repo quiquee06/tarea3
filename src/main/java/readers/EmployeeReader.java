@@ -22,7 +22,7 @@ public class EmployeeReader {
         System.out.println("Apellidos:");
         String surname = sc.nextLine();
 
-        System.out.println("Puesto:");
+        System.out.println("Puesto");
         String position = sc.nextLine();
 
         return new Employee(
