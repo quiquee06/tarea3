@@ -1,3 +1,5 @@
+package model;
+
 import java.util.Arrays;
 import java.util.Objects;
 
@@ -50,7 +52,7 @@ public class Company {
 
     @Override
     public String toString() {
-        return "Company{" +
+        return "model.Company{" +
                 "name='" + name + '\'' +
                 ", cif='" + cif + '\'' +
                 ", departments=" + Arrays.toString(departments) +
