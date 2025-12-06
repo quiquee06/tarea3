@@ -30,14 +30,20 @@ public class CompanyApp {
             sc.nextLine();
 
             if (opt == 1) {
-                System.out.println("Introduce el nombre del departamento");
-                String name = sc.nextLine();
-
-                Department department = company.findDepartment(name);
-                if (department.getName().equals(name)) {
-
-                }
+                showDepartmentInfoByName(company);
             }
         } while (opt != 4);
+    }
+
+    private void showDepartmentInfoByName(Company company) {
+        System.out.println("Introduce el nombre del departamento");
+        String name = sc.nextLine();
+
+        Department department = company.findDepartment(name);
+        if (department.getName().equals(name)) {
+            department.showInfo();
+        } else {
+            System.out.println("No se encuentra el departamento");
+        }
     }
 }
