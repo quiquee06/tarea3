@@ -31,6 +31,8 @@ public class DepartmentReader {
             sc.nextLine();
         } while (numEmployees < 1);
 
+        System.out.println("Introduce los empleados");
+
         Employee[] employees = new Employee[numEmployees];
         for (int i = 0; i < employees.length; i++) {
             employees[i] = employeeReader.read();
