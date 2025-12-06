@@ -1,3 +1,5 @@
+package model;
+
 import java.util.Arrays;
 import java.util.Objects;
 
@@ -50,7 +52,7 @@ public class Department {
 
     @Override
     public String toString() {
-        return "Department{" +
+        return "model.Department{" +
                 "name='" + name + '\'' +
                 ", budget=" + budget +
                 ", employees=" + Arrays.toString(employees) +
