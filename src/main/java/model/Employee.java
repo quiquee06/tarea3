@@ -15,6 +15,13 @@ public class Employee {
         this.position = position;
     }
 
+    public void showInfo() {
+        System.out.println("NIF: " + nif);
+        System.out.println("Nombre: " + name);
+        System.out.println("Apellidos: " + surname);
+        System.out.println("Puesto: " + position);
+    }
+
     public String getNif() {
         return nif;
     }

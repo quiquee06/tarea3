@@ -14,6 +14,16 @@ public class Company {
         this.departments = departments;
     }
 
+    public Department findDepartment(String name) {
+        for (Department department : departments) {
+            if (department.getName().equals(name)) {
+                return department;
+            }
+        }
+
+        return null;
+    }
+
     public String getName() {
         return name;
     }

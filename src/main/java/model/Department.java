@@ -14,6 +14,25 @@ public class Department {
         this.employees = employees;
     }
 
+    public void showInfo() {
+        System.out.println("Nombre: " + name);
+        System.out.println("Presupuesto: " + budget);
+        System.out.println("Empleados:");
+        for (int i = 0; i < employees.length; i++) {
+            employees[i].showInfo();
+        }
+    }
+
+    public Employee findEmployee(String nif) {
+        for (Employee employee : employees) {
+            if (employee.getNif().equals(nif)) {
+                return employee;
+            }
+        }
+
+        return null;
+    }
+
     public String getName() {
         return name;
     }
